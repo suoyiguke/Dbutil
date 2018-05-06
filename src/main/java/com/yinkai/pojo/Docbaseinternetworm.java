@@ -12,6 +12,7 @@ public class Docbaseinternetworm implements Serializable{
     private int views;
     private String source;
     private String url;
+    private String md5;
 
     public Docbaseinternetworm() {
     }
@@ -80,5 +81,13 @@ public class Docbaseinternetworm implements Serializable{
         return "Doc [id=" + id + ", title=" + title + ", content=" + content
                 + ", date=" + date + ", author=" + author + ", views=" + views
                 + ", source=" + source + "]";
+    }
+
+    public String getMd5() {
+        return md5;
+    }
+
+    public void setMd5(String md5) {
+        this.md5 = md5;
     }
 }
